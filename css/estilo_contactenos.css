@@ -1,0 +1,163 @@
+/**Inicializacion de css**/
+
+html{
+
+	box-sizing: border-box;
+}
+
+*,*before,*after{
+	box-sizing: inherit;
+}
+*{
+	margin: 0; 
+	padding: 0;
+}
+
+/**Iniciamos con estilo de la pagina**/
+body{
+	font-family: verdana,geneva,serif;
+	background-color: #FDFEFE;
+}
+
+header{
+	padding: 20px 0;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.logo img{
+	padding: 10px 30px ;
+	width: 150px;
+}
+
+/**Navegacion**/
+
+.navegacion{
+background-color: #B32121;
+}
+nav{
+
+	width: 1200px;
+	margin: 0 auto;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav >ul>li{
+	float: left;
+}
+
+nav ul:after{
+	content: "" ;
+	display: block;
+	clear: both;
+}
+
+nav ul li a {
+display: inline-block;
+width: 200px;
+color: #ffffff;
+text-align: center;
+text-decoration: none;
+padding: 20px;
+}
+
+nav ul li a:hover{
+	background-color: #CD5C5C;
+}
+
+/**Contenedor principal de secction**/
+
+h1{
+	padding: 5px 20px;
+	padding-bottom: 20px;
+	font-family: Rockwell;
+	font-size: 2em;
+	color: #5F6A6A  ;
+}
+
+div.contenido_principal{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.logoweb img{
+	width: 100%;
+	height: 300px;
+}
+
+/**Formulario**/
+div.formulario{
+	width: 100%;
+	background-color: black;
+}
+
+div.inputs{
+	padding-top: 20px;
+	width: 15%;
+	float: left;
+}
+input{
+	padding: 12px 5px;
+	margin: 5px 5px;
+}
+
+div.cajatexto{
+	padding-top: 20px;
+	width: 20%;
+	float: left;
+}
+button{
+	padding: 10px 15px;
+	font-weight: bold;
+	margin-left: 25%;
+	background-color: #B32121;
+	color: white;
+}
+textarea{
+	padding: 10px 5px;
+}
+
+div.web{
+	width: 65%;
+	float: left;
+}
+
+.web img{
+	width: 80%;
+	height: 260px;
+	padding-left: 40px;
+}
+
+div.mapa{
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+iframe{
+	width: 100%;
+	height: 600px;
+}
+
+
+/**Footer**/
+footer{
+	clear: both;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #EAEDED;
+	padding: 30px 20px;
+
+}
+h3{
+	color: #909497  ;
+}
+h4,h5{
+	color: #A6ACAF  ;
+}
+
+div.contenido_final h1{
+	padding: 20 0;
+}

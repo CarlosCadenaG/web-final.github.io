@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Author" content="Carlos Cadena">
+    <meta name="Description" content="Actividad 1 diseño web">
+    <meta name="Generator" content="Sublime Text">
+	<title>Paginas Diseño Web Manuela Beltran</title>
+	<link rel="stylesheet" href="css/estilo_cursos.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+</head>
+<body>
+
+	<header>
+	
+		<div class="contenedor_logo">
+			<div class="logo">
+				<a href="index.html"> <img src="img/logoUmbVirtual.jpg" alt="logo manuela beltran"></a>
+			</div>
+		</div > <!--Cierre div contenedor logo-->
+
+		<!--Inicio menu de navegacion-->
+		<div class="navegacion">
+			<nav>
+				<ul>
+					<li> <a href="index.html">Inicio</a></li>
+					<li><a href="cursos.html">Temas a Aprender</a></li>
+					<li><a href="nosotros.html">Estudioso</a></li>
+					<li><a href="contactenos.html">Contáctanos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section>
+		<div class="contenido_principal">
+
+			<h1> <em>Nuestro tema a Aprender - HTML</em></h1>
+<article>
+		
+<!--Implementacion codigo javascript Formulario popup-->
+<button id="btn-abrir-popup" class="btn-abrir-popup">Ir a cursos</button>
+
+	</article>
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+				<h3>SUSCRIBETE</h3>
+				<h4>Estudia en la UMB.</h4>
+				<form action="">
+					<div class="contenedor-inputs">
+						<input type="text" placeholder="Nombre">
+						<input type="email" placeholder="Correo">
+					</div>
+					<input type="submit" class="btn-submit" value="Suscribirse">
+				</form>
+			</div>
+		</div>
+
+			<hr >
+			<figure>
+				<!--Inicio tabla contenedora de imagenes y archivo pdf-->
+				<table >
+			       	<tr> 
+            	 		<embed src="files/Modulo1.pdf" type="application/pdf" width="100%" height="600px" />
+	            	</tr>
+	            	<tr> 
+	            		<img src="img/Html5.png" alt="">
+	  				    <img src="img/css3.png" alt="">
+	              	    <img src="img/JS.png" alt="">                
+	            	</tr>
+            	</table>
+			</figure>
+		</div>
+	</section>
+
+	<footer>
+		<div class="contenido_final">
+			<h3>Universidad Manuela Beltran</h3>
+			<h4>Ingenieria de Software</h4>
+			<h5>Carlos Cadena</h5>
+		</div>
+		
+	</footer>
+	
+   <!--javascript Formulario popup-->
+	<script src="popup.js"></script>
+	
+</body>
+</html>

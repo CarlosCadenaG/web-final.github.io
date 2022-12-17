@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Author" content="Carlos Cadena">
+    <meta name="Description" content="Actividad 1 diseño web">
+    <meta name="Generator" content="Sublime Text">
+	<title>Diseño Web Manuela Beltran</title>
+	<link rel="stylesheet" href="css/estilos.css">
+
+<!--Reloj con javascript-->
+	<script language="JavaScript">
+	function ver_hora(){
+     var mihora = new Date ();
+     var horas = mihora.getHours().toString();
+     var minutos = mihora.getMinutes().toString();
+     if (minutos.length == 1) minutos = "0" + minutos;
+     var segundos = mihora.getSeconds().toString();
+     if (segundos.length == 1) segundos = "0" + segundos;
+ 
+       document.forms[0].mireloj.value = horas + ":" + minutos + ":" + segundos;
+	}
+</script>
+
+
+</head>
+<body>
+
+	<header>
+		<div class="contenedor_logo">
+			<div class="logo">
+				<a href="index.html"> <img src="img/logoUmbVirtual.jpg" alt="logo manuela beltran"></a>
+			</div>
+		</div > <!--Cierre div contenedor logo-->
+
+		<!--Inicio menu de navegacion-->
+		<div class="navegacion">
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="cursos.html">Temas a Aprender</a></li>
+					<li><a href="nosotros.html">Estudioso</a></li>
+					<li><a href="contactenos.html">Contáctanos</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header> <!--Cierre header-->
+	<section>
+
+		<div class="contenido_principal">
+		 	<table >
+            	<tr>
+            		<td><a href="index.html"> <img src="img/primer.png"/ title="Inicio"> </td> </a>
+            		<td> <a href="cursos.html">	<img src="img/Segunda.png" title="Cursos Aprender" /></td></a>
+            		<td><a href="nosotros.html"> <img src="img/tercer.png"/ title="Nosotros"></td></a>
+            		<td><a href="contactenos.html"> <img src="img/cuarta.png"/ title="Contáctenos"></td></a>
+            	</tr>
+            </table>
+
+			<article>
+				<h2>Diseño Web</h2>
+				<hr >
+				<p>Un sitio web es el canal más importante de Marketing Digital, por lo que debe construirse con mucho cuidado y enfocado en lo que la empresa quiere lograr. Para un diseñador web implica dedicar muchos recursos y esfuerzos al aprendizaje continuo. Veremos conceptos de como recopilar datos para el proceso de creación de un proyecto web y cómo diseñarlo correctamente hasta su puesta en real, en un entorno en que pueda ser visto por otras personas</p>
+			</article>
+
+		<form><!--Reloj con javascript-->
+		 <p align="center">
+          <input type="text" size="10" name="mireloj">
+		  </p>
+	    </form>
+	    <script>
+		   var r = setInterval ("ver_hora()", 500);
+	    </script>
+
+		</div><!--Cierre div contenido principal-->
+	</section>
+
+	<footer>
+		<div class="contenido_final">
+			<h3>Universidad Manuela Beltran</h3>
+			<h4>Ingenieria de Software</h4>
+			<h5>Carlos Cadena</h5>
+		</div>
+		</footer>
+
+
+</body>
+</html>
